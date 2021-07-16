@@ -13,17 +13,17 @@ const routes = [
   {
     path: '/action',
     name: 'Action',
-    component: () => import('../views/Action')
+    component: () => import('../views/MovieViews')
   },
   {
     path: '/comedy',
     name: 'Comedy',
-    component: () => import('../views/Comedy')
+    component: () => import('../views/MovieViews')
   },
   {
     path: '/horror',
     name: 'Horror',
-    component: () => import('../views/Horror')
+    component: () => import('../views/MovieViews')
   },
 ]
 

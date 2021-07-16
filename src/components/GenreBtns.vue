@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: "GenreCards",
+  name: "GenreBtns",
   props: {
     title: String,
     genre: String,
@@ -26,15 +26,5 @@ button {
   border:2px solid green;
   border-radius: 2rem;
   font-size: 2rem;
-}
-.genre-card {
-  width: 15rem;
-  border: 1px solid green;
-  border-radius: 1.7rem;
-  cursor: pointer;
-  padding: 0.5rem;
-}
-.genre-card :hover {
-  color: green;
 }
 </style>
