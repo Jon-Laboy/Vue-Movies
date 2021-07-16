@@ -1,6 +1,6 @@
 <template>
-  <div style="marginTop: 8rem">
-    <b-button variant="success" @click="viewGenrePage">{{ title }}</b-button>
+  <div style="marginTop: 5rem">
+    <b-button size="large" variant="outline-success" @click="viewGenrePage">{{ title }}</b-button>
   </div>
 </template>
 <script>
@@ -19,12 +19,6 @@ export default {
 </script>
 <style scoped>
 button { 
-  width: 15vw;
-  height: 15vh;
-  background: white;
-  color: green;
-  border:2px solid green;
-  border-radius: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 </style>
