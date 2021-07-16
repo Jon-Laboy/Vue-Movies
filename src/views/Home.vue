@@ -1,18 +1,29 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1 style="marginTop:3rem;">Movies Man</h1>
+    <b-container class="mt-4">
+      <b-row>
+        <b-col sm="12" md="4"><GenreCards title="Action" genre="action"/></b-col>
+        <b-col sm="12" md="4"><GenreCards title="Comedy" genre="comedy"/></b-col>
+        <b-col sm="12" md="4"><GenreCards title="Horror" genre="horror"/></b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import GenreCards from "../components/GenreCards.vue";
+// const API_KEY = process.env.VUE_APP_MOVIE_API_KEY;
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
-}
+    GenreCards,
+  },
+  // data() {
+  //   return {
+
+  //   }
+  // },
+};
 </script>
