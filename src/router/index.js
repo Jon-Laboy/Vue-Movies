@@ -25,6 +25,11 @@ const routes = [
     name: 'Horror',
     component: () => import('../views/MovieViews')
   },
+  {
+    path: '/romance',
+    name: 'Romance',
+    component: () => import('../views/MovieViews')
+  },
 ]
 
 const router = new VueRouter({

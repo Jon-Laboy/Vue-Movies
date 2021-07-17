@@ -6,6 +6,7 @@
         <b-col sm="12" md="4"><GenreBtns title="Action" genre="action"/></b-col>
         <b-col sm="12" md="4"><GenreBtns title="Comedy" genre="comedy"/></b-col>
         <b-col sm="12" md="4"><GenreBtns title="Horror" genre="horror"/></b-col>
+        <b-col sm="12" md="4"><GenreBtns title="Romance" genre="romance"/></b-col>
       </b-row>
     </b-container>
   </div>

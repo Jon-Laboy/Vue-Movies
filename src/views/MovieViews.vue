@@ -1,6 +1,6 @@
 <template>
   <div class="action">
-    <h1 style="marginTop:3rem;">Action Movies</h1>
+    <h1 style="marginTop:3rem;">{{`${genreTitle} Movies`}}</h1>
 
     <div v-for="movie in movies" :key="movie.id" style="marginTop:3rem;">
       <MoviePoster
@@ -8,7 +8,6 @@
         :movieImg="movie.poster_path"
       />
     </div>
-    <h1>{{ genreNum }}</h1>
   </div>
 </template>
 <script>
@@ -21,6 +20,7 @@ export default {
       apiKey: process.env.VUE_APP_MOVIE_API_KEY,
       genreNum: null,
       movies: [],
+      genreTitle: '',
     };
   },
   async created() {
@@ -45,6 +45,9 @@ export default {
         case "Horror":
           this.genreNum = 27;
           break;
+        case "Romance":
+          this.genreNum = 10749;
+          break; 
         default:
           this.genreNum = null;
       }
@@ -53,6 +56,7 @@ export default {
         genreNum: this.genreNum,
       });
       this.movies = this.$store.state.movies;
+      this.genreTitle = this.$route.name; 
     },
   },
 };

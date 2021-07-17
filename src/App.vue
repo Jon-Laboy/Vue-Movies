@@ -5,6 +5,7 @@
       <router-link to="/action">Action</router-link>
       <router-link to="/comedy">Comedy</router-link>
       <router-link to="/horror">Horror</router-link>
+      <router-link to="/romance">Romance</router-link>
     </div>
     <router-view />
   </div>
