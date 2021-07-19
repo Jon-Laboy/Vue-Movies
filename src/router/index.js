@@ -30,6 +30,16 @@ const routes = [
     name: 'Romance',
     component: () => import('../views/MovieViews')
   },
+  {
+    path: '/western',
+    name: 'Western',
+    component: () => import('../views/MovieViews')
+  },
+  {
+    path: '/documentary',
+    name: 'Documentary',
+    component: () => import('../views/MovieViews')
+  },
 ]
 
 const router = new VueRouter({

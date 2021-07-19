@@ -6,6 +6,8 @@
       <router-link to="/comedy">Comedy</router-link>
       <router-link to="/horror">Horror</router-link>
       <router-link to="/romance">Romance</router-link>
+      <router-link to="/western">Western</router-link>
+      <router-link to="/documentary">Documentary</router-link>
     </div>
     <router-view />
   </div>

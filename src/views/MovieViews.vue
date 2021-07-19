@@ -47,7 +47,13 @@ export default {
           break;
         case "Romance":
           this.genreNum = 10749;
-          break; 
+          break;
+        case "Western":
+          this.genreNum = 37;
+          break;
+        case "Documentary":
+          this.genreNum = 99;
+          break;  
         default:
           this.genreNum = null;
       }
